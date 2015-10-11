@@ -1,23 +1,85 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Akshay Khale | Github page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<title>akshay Khale Github Page</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/materialize.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<div class="col s12"><h1>Hello World</h1></div>
-		<div class="col s12">
-		<p>This is my first Github page</p>
-		<p>Soon I will add some content here :)</p>
+		<div class="row">
+			<div id="profile-pic-container" class="col s12">
+				<img class="responsive-img" src="img/akshay-khale.png" alt="Akshay Khale image">
+				<h1>Akshay Khale</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<ul class="collapsible" data-collapsible="accordion">
+					<li>
+						<div class="collapsible-header"><i class="material-icons">class</i>Educational Qualification</div>
+						<div class="collapsible-body"0>
+							<p>
+								<i class="material-icons education-check-icon">done</i> Bsc(I.T.)-2012 Passout with 68% from Mumbai University.<br/>
+								<i class="material-icons education-check-icon">done</i> Completed Post Graduate Diploma in Business Administration(PGDBA) from Welingkar.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">work</i>Work Experience</div>
+						<div class="collapsible-body">
+							<p>
+								<i class="material-icons experience-assignment-icon">assignment</i> Worked as Jr. Programmer at <a href="http://www.media2win.com" target="_blank">Media2win</a>.<br/>
+								<i class="material-icons experience-assignment-icon">assignment</i> Working as Sr. Developer at <a href="https://www.vamaship.com" target="_blank">Vamaship</a>.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">thumb_up</i>Skills</div>
+						<div class="collapsible-body">
+							<p>
+								<i class="material-icons skills-grade-icon">grade</i> Front End : HTML5, CSS3, Javascript, Jquery.<br/>
+								<i class="material-icons skills-grade-icon">grade</i> Back End : PHP5, ASP, ASP.net.<br/>
+								<i class="material-icons skills-grade-icon">grade</i> Application Development : Android App Development with Java, Desktop Application Development with C# &amp; VB.<br/>
+								<i class="material-icons skills-grade-icon">grade</i> Front End Frameworks : Bootstrap, Materialize.<br/>
+								<i class="material-icons skills-grade-icon">grade</i> Back End Frameworks : Laravel, CodeIgniter.<br/>
+								<i class="material-icons skills-grade-icon">grade</i> Application- Development Frameworks : Phonegap, Ionic.<br/>
+								<i class="material-icons skills-grade-icon">grade</i> API : Instagram API, Google Charts API, Google+ API, Youtube API, IMDB API.<br/>
+								<i class="material-icons skills-grade-icon">grade</i> Additional Skills &amp; Knowledge : Git VCS, Website Hosting, Photoshop-CS6.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">perm_identity</i>Blogs &amp; Social Accounts</div>
+						<div class="collapsible-body">
+							<p>
+								Facebook : <a href="https://www.facebook.com/akshayakhale">@AkshayAKhale</a><br/>
+								Google+ : <a href="https://plus.google.com/+akshaykhale">+akshaykhale</a><br/>
+								Twitter : <a href="https://twitter.com/4androidfans">@4androidfans</a><br/>
+								Github : <a href="https://github.com/akshaykhale1992">@akshaykhale1992</a><br/>
+								StackOverflow : <a href="http://stackoverflow.com/users/2541634/akshay-khale">http://stackoverflow.com/users/2541634/akshay-khale</a><br/>
+								Blog : <a href="https://4androidfans.wordpress.com">4androidfans.wordpress.com</a><br/>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.collapsible').collapsible({
+				accordion : false
+			});
+		});
+	</script>
 </body>
 </html>
