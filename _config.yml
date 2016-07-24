@@ -1,0 +1,26 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Akshay Khale
+email: khaleakshay@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://akshaykhale1992.github.io/" # the base hostname & protocol for your site
+facebook_username: AkshayAKhale
+twitter_username: TheAkshayKhale
+github_username:  AkshayKhale1992
+stackoverflow_url: "http://stackoverflow.com/users/2541634/akshay-khale"
+youtube_channel_url: "https://www.youtube.com/channel/UCWrECPuDYUqrg08OglZlPBg"
+
+# Build settings
+markdown: kramdown
+
+repository: "https://github.com/akshaykhale1992/akshaykhale1992.github.io.git"

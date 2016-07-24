@@ -1,0 +1,35 @@
+<footer class="container">
+  <div class="col-md-5">
+    <ul class="social-media-list list-inline">
+      {% if site.github_username %}
+      <li>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank"><span class="fa fa-github-alt"></span></a>
+      </li>
+      {% endif %}
+
+      {% if site.twitter_username %}
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><span class="fa fa-twitter"></span></a>
+      </li>
+      {% endif %}
+
+      {% if site.stackoverflow_url %}
+      <li>
+        <a href="{{ site.stackoverflow_url }}" target="_blank"><span class="fa fa-stack-overflow"></span></a>
+      </li>
+      {% endif %}
+
+      {% if site.facebook_username %}
+      <li>
+        <a href="https://fb.me/{{ site.facebook_username }}" target="_blank"><span class="fa fa-facebook"></span></a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+  <div class="col-md-5">
+    <!--<p>{{ site.description }}</p>-->
+    <p align="right">
+      subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+    </p>
+  </div>
+</footer>
