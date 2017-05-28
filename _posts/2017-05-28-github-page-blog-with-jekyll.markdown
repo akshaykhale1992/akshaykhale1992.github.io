@@ -8,7 +8,9 @@ header-img: "img/hello-world-banner.jpg"
 ---
 
 <h1>Getting started with a Github Page Blog using Jekyll</h1>
-
+<p align="center">
+	<img src="https://akshaykhale1992.github.io/img/octojekyll.png" alt="Octo-Jekyll" style="max-width: 500px; width: 50%; height: auto;" width="500px" height="auto">
+</p>
 <p>I recently started research on <a href="https://jekyllrb.com/">Jekyll</a> for creating github page and fell in love with the simplicity and easy implementation.</p>
 <p>I worked on <a href="https://wordpress.com/" target="_blank">Wordpress</a> and managing and maintaining a <a href="https://4androidfans.wordpress.com/"  target="_blank">blog</a> but for <a href="https://akshaykhale1992.github.io/" target="_blank">my githib page</a>, I was looking for a simple and easy to implement blogging platform without the hassle of different installations and then I found the perfect option.</p>
 <p><a href="https://jekyllrb.com/"><b><i>Jekyll : Transform your plain text into static websites and blogs.</i></b></a></p>
