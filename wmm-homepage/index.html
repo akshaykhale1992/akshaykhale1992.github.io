@@ -4,9 +4,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<title>Om Browser - Homepage</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"/>
 	<style>
+		body {
+			background: linear-gradient(to bottom, #94c5f8 1%, #a6e6ff 70%, #b1b5ea 100%);
+		}
 		.container {
 			padding-top: 20px;
 		}
@@ -15,8 +18,10 @@
 			margin-bottom: 10px;
 		}
 		.social-icons img {
+			border-radius: 5px;
 			width: 100%;
 			max-width: 500px;
+			background-color: #fff;
 		}
 		#google-logo {
 			text-align: center;
@@ -29,6 +34,38 @@
 		#search-block {
 			margin-top: 15px;
 			margin-bottom: 15px;
+		}
+		.panel-group .panel {
+		    border-radius: 0;
+		    box-shadow: none;
+		    border-color: #EEEEEE;
+		}
+		.panel-default > .panel-heading {
+		    padding: 0;
+		    border-radius: 0;
+		    color: #212121;
+		    background-color: #FAFAFA;
+		    border-color: #EEEEEE;
+		}
+		.panel-title {
+		    font-size: 14px;
+		}
+		.panel-title > a {
+		    display: block;
+		    padding: 15px;
+		    text-decoration: none;
+		}
+		.more-less {
+		    float: right;
+		    color: #212121;
+		}
+		.panel-default > .panel-heading + .panel-collapse > .panel-body {
+		    border-top-color: #EEEEEE;
+		}
+		.panel-body {
+			padding: 10px;
+			background-color: #fff;
+			margin-bottom: 10px;
 		}
 	</style>
 </head>
@@ -78,64 +115,148 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-3 social-icons">
-				<a href="http://flickr.com"><img src="img/flickr.png" alt="Flickr Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://blogger.com"><img src="img/blogger.png" alt="Blogger Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://www.vimeo.com/"><img src="img/vimeo.png" alt="Vimeo Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://dribbble.com"><img src="img/dribbble.png" alt="Dribbble Logo"></a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-3 social-icons">
-				<a href="http://www.amazon.com"><img src="img/amazon.png" alt="Amazon Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://flipkart.com"><img src="img/flipkart.png" alt="Flipkart Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="www.cricbuzz.com/"><img src="img/crickbuzz.png" alt="Crickbuzz Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://jabong.com"><img src="img/jabong.png" alt="Jabong Logo"></a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-3 social-icons">
-				<a href="http://irctc.co.in"><img src="img/irctc.jpg" alt="IRCTC Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://hotstar.com"><img src="img/hotstar.jpg" alt="Hotstar Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://blogger.com"><img src="img/blogger.png" alt="Blogger Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://olx.com"><a href="http://olx.com"><img src="img/olx.jpg" alt="OLX Logo"></a></a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-3 social-icons">
-				<a href="http://en.wikipedia.org"><img src="img/wikipedia.png" alt="Wikipedia Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://bookmyshow.com"><img src="img/bookmyshow.jpg" alt="BookMyShow Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="http://yahoo.com"><img src="img/yahoo.ico" alt="Yahoo Logo"></a>
-			</div>
-			<div class="col-3 social-icons">
-				<a href="https://mail.yahoo.com/"><img src="img/yahoomail.png" alt="YMail Logo"></a>
+			<div class="col-md-12">
+			    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			        <div class="panel panel-default">
+			            <div class="panel-heading" role="tab" id="headingOne">
+			                <h4 class="panel-title">
+			                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			                        <i class="more-less glyphicon glyphicon-plus"></i>
+			                        Top Websites
+			                    </a>
+			                </h4>
+			            </div>
+			            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+			                <div class="panel-body">
+			                	<ul class="list-group">
+								  <li class="list-group-item"><a href="http://wikipedia.com/">Wikipedia</a></li>
+								  <li class="list-group-item"><a href="http://yahoo.com/">Yahoo</a></li>
+								  <li class="list-group-item"><a href="http://mail.google.com/">Gmail</a></li>
+								  <li class="list-group-item"><a href="http://bing.com/">Bing</a></li>
+								</ul>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			            <div class="panel-heading" role="tab" id="headingTwo">
+			                <h4 class="panel-title">
+			                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			                        <i class="more-less glyphicon glyphicon-plus"></i>
+			                        Top Shopping Websites
+			                    </a>
+			                </h4>
+			            </div>
+			            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			                <div class="panel-body">
+			                    <ul class="list-group">
+								  <li class="list-group-item"><a href="http://amazon.com/">Amazon</a></li>
+								  <li class="list-group-item"><a href="http://flipkart.com/">Flipkart</a></li>
+								  <li class="list-group-item"><a href="http://myntra.com/">Myntra</a></li>
+								  <li class="list-group-item"><a href="http://ebay.com/">Ebay</a></li>
+								  <li class="list-group-item"><a href="http://snapdeal.com/">Snapdeal</a></li>
+								  <li class="list-group-item"><a href="http://jabong.com/">Jabong</a></li>
+								  <li class="list-group-item"><a href="http://tradus.com/">Tradus</a></li>
+								  <li class="list-group-item"><a href="http://yepme.com/">Yepme</a></li>
+								  <li class="list-group-item"><a href="http://Ajiyo.com/">Ajiyo</a></li>
+								  <li class="list-group-item"><a href="http://alibaba.com/">Alibaba</a></li>
+								</ul>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			            <div class="panel-heading" role="tab" id="headingSix">
+			                <h4 class="panel-title">
+			                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+			                        <i class="more-less glyphicon glyphicon-plus"></i>
+			                        Top Online Walletes
+			                    </a>
+			                </h4>
+			            </div>
+			            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+			                <div class="panel-body">
+			                    <ul class="list-group">
+								  <li class="list-group-item"><a href="http://paytm.com/">PAyTM</a></li>
+								  <li class="list-group-item"><a href="https://www.airtel.in/bank/">Airtel Money</a></li>
+								  <li class="list-group-item"><a href="http://www.citruspay.com/">Citrus Pay</a></li>
+								  <li class="list-group-item"><a href="https://freecharge.in/">FreeCharge</a></li>
+								  <li class="list-group-item"><a href="https://www.mobikwik.com/">Mobikwik</a></li>
+								  <li class="list-group-item"><a href="https://www.payumoney.com/">PayU Money</a></li>
+								  <li class="list-group-item"><a href="https://www.olamoney.com/">Ola Money</a></li>
+								  <li class="list-group-item"><a href="https://www.oxigenwallet.com/">Oxigen Wallet</a></li>
+								  <li class="list-group-item"><a href="https://www.jio.com/en-in/apps/jio-money">Jio Money</a></li>
+								</ul>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			            <div class="panel-heading" role="tab" id="headingThree">
+			                <h4 class="panel-title">
+			                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			                        <i class="more-less glyphicon glyphicon-plus"></i>
+			                        Top Entertainment Websites
+			                    </a>
+			                </h4>
+			            </div>
+			            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			                <div class="panel-body">
+			                    <ul class="list-group">
+								  <li class="list-group-item"><a href="http://netflix.com/">Netflix</a></li>
+								  <li class="list-group-item"><a href="http://hotstar.com/">Hotstar</a></li>
+								  <li class="list-group-item"><a href="http://imdb.com/">IMDB</a></li>
+								  <li class="list-group-item"><a href="http://fmovies.se/">Fmovies</a></li>
+								  <li class="list-group-item"><a href="http://www.santabanta.com/">Santabanta</a></li>
+								  <li class="list-group-item"><a href="http://www.scoopwhoop.com/">Scoopwhoop</a></li>
+								</ul>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			            <div class="panel-heading" role="tab" id="headingFour">
+			                <h4 class="panel-title">
+			                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+			                        <i class="more-less glyphicon glyphicon-plus"></i>
+			                        Top Blogs
+			                    </a>
+			                </h4>
+			            </div>
+			            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+			                <div class="panel-body">
+			                    <ul class="list-group">
+								  <li class="list-group-item"><a href="https://techcrunch.com/">Tech Crunch</a></li>
+								  <li class="list-group-item"><a href="https://mashable.com/">Mashable</a></li>
+								  <li class="list-group-item"><a href="https://gizmodo.com/">Gizmodo</a></li>
+								  <li class="list-group-item"><a href="https://www.engadget.com/">Engadget</a></li>
+								  <li class="list-group-item"><a href="https://lifehacker.com/">Life Hacker</a></li>
+								</ul>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			            <div class="panel-heading" role="tab" id="headingFive">
+			                <h4 class="panel-title">
+			                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+			                        <i class="more-less glyphicon glyphicon-plus"></i>
+			                        Top Reading Websites and Forums
+			                    </a>
+			                </h4>
+			            </div>
+			            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+			                <div class="panel-body">
+			                    <ul class="list-group">
+								  <li class="list-group-item"><a href="http://medium.com/">Medium</a></li>
+								  <li class="list-group-item"><a href="http://quora.com/">Quora</a></li>
+								  <li class="list-group-item"><a href="http://stackoverflow.com/">Stackoverflow</a></li>
+								  <li class="list-group-item"><a href="https://forum.xda-developers.com/">XDA Forums</a></li>
+								</ul>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
 			</div>
 		</div>
 	</div>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 </html>
