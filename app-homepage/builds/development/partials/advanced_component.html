@@ -1,0 +1,30 @@
+<div *ngIf="live_video != ''">
+	<div class="row" *ngIf="streaming_video_title != ''">
+		<h1>{{ streaming_video_title }}</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-12 iframe_container">
+			<iframe frameborder="0" allowfullscreen class="video" src="{{ live_video }}"></iframe>
+		</div>
+	</div>
+	<hr/>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<h4>Other Videos By our Channel</h4>
+	</div>
+</div>
+<div class="row">
+	<div *ngFor="#video of video_data">
+	    <div class="col-md-6" (click)="loadVideo(video.video_id)">
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="{{ video.thumbnail }}" width="100%" alt="">
+				</div>
+				<div class="col-sm-6">
+					<p>{{ video.description }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
