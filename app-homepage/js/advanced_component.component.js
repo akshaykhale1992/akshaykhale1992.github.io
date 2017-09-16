@@ -50,7 +50,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             };
                             ref.video_data.push(video);
                             if (typeof (response.items[i].snippet.liveBroadcastContent) != "undefined" &&
-                                response.items[i].snippet.liveBroadcastContent != "none") {
+                                response.items[i].snippet.liveBroadcastContent == "live") {
                                 ref.live_video = "https://www.youtube.com/embed/" + response.items[i].id.videoId;
                             }
                         }
