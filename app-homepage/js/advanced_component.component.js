@@ -31,7 +31,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 AdvancedComponent.prototype.ngOnInit = function () {
                     var callback = this.logResponse;
-                    this.loadRemoteUrl("https://www.googleapis.com/youtube/v3/search?key=AIzaSyDYU01Z0X0OQh8p6_Vc3G_dOj9bZ2ZWbnY&channelId=UCy-ECyyzP-YGrehUk7TI0Nw&part=snippet,id&order=date&maxResults=50&type=video", callback);
+                    this.loadRemoteUrl("https://www.googleapis.com/youtube/v3/search?key=AIzaSyDYU01Z0X0OQh8p6_Vc3G_dOj9bZ2ZWbnY&channelId=UCr8O-xyvehHUVdHLopvZt3g&part=snippet,id&order=date&maxResults=50&type=video", callback);
                 };
                 AdvancedComponent.prototype.loadVideo = function (video_id) {
                     this.streaming_video_title = "";
