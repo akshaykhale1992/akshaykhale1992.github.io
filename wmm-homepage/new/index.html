@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Om Browser - Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"/>
+    
+    <script src="js/lib/angular2/es6-shim.min.js"></script>
+    <script src="js/lib/angular2/system-polyfills.js"></script>
+    <script src="js/lib/angular2/angular2-polyfills.js"></script>
+    <script src="js/lib/angular2/system.src.js"></script>
+    <script src="js/lib/angular2/Rx.js"></script>
+    <script src="js/lib/angular2/angular2.dev.js"></script>
+    <script>
+      System.config({
+        packages: {
+          js: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('js/boot')
+        .then(null, console.error.bind(console));
+    </script>
+    <style type="text/css">
+      .row {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .iframe_container {
+          position: relative;
+          width: 100%;
+          height: 0;
+          padding-bottom: 56.25%;
+      }
+      .video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+    </style>
+    <style>
+      body {
+        /*background: linear-gradient(to bottom, #94c5f8 1%, #a6e6ff 70%, #b1b5ea 100%);*/
+        background: url('img/bg3.jpg');
+        background-size: cover;
+      }
+      .container {
+        padding-top: 20px;
+      }
+      .row {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .social-icons img {
+        border-radius: 5px;
+        width: 100%;
+        max-width: 500px;
+        background-color: #fff;
+      }
+      #google-logo {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #google-logo img {
+        width: 80%;
+        max-width: 500px;
+      }
+      #search-block {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .panel-group .panel {
+          border-radius: 0;
+          box-shadow: none;
+          border-color: #EEEEEE;
+      }
+      .panel-default > .panel-heading {
+          padding: 0;
+          border-radius: 0;
+          color: #212121;
+          background-color: #FAFAFA;
+          border-color: #EEEEEE;
+      }
+      .panel-title {
+          font-size: 14px;
+      }
+      .panel-title > a {
+          display: block;
+          padding: 15px;
+          text-decoration: none;
+      }
+      .more-less {
+          float: right;
+          color: #212121;
+      }
+      .panel-default > .panel-heading + .panel-collapse > .panel-body {
+          border-top-color: #EEEEEE;
+      }
+      .panel-body {
+        padding: 10px;
+        background-color: #fff;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+<body>
+  <div class="container">
+    <div id="search-block" class="row">
+      <div id="google-logo" class="col-md-12">
+        <img src="img/google-logo.png" alt="Google Logo">
+      </div>
+      <div class="col-md-12">
+        <form target="_parent" action="https://www.google.com/search">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Google Search" aria-label="Google Search">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </span>
+          </div>
+          </form>
+      </div>
+    </div>
+    <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">
+          Popular Websites
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">
+          Top News Stories
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row">
+          <div class="col-3 social-icons">
+            <a target="_parent" href="https://facebook.com/"><img src="img/facebook.png" alt="Facebook Logo"></a>
+          </div>
+          <div class="col-3 social-icons">
+            <a target="_parent" href="http://twitter.com/"><img src="img/twitter.png" alt="Twitter Logo"></a>
+          </div>
+          <div class="col-3 social-icons">
+            <a target="_parent" href="http://plus.google.com/"><img src="img/google-plus.png" alt="Google Plus Logo"></a>
+          </div>
+          <div class="col-3 social-icons">
+            <a target="_parent" href="http://www.instagram.com/"><img src="img/instagram.png" alt="Instagram Logo"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 social-icons">
+            <a target="_parent" href="http://youtube.com/"><img src="img/youtube.png" alt="Youtube Logo"></a>
+          </div>
+          <div class="col-3 social-icons">
+            <a target="_parent" href="https://www.linkedin.com/"><img src="img/linkedin.png" alt="Linkedin Logo"></a>
+          </div>
+          <div class="col-3 social-icons">
+            <a target="_parent" href="http://pinterest.com/"><img src="img/pinterest.png" alt="Pinterest Logo"></a>
+          </div>
+          <div class="col-3 social-icons">
+            <a target="_parent" href="http://skype.com"><img src="img/skype.png" alt="Skype Logo"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 social-icons">
+            <a target="_parent" href="http://www.cricbuzz.com/"><img src="img/crickbuzz.png" alt="Cricbuzz Logo"></a>
+          </div>
+          <div class="col-3 social-icons">
+            <a target="_parent" href="https://www.amazon.in/"><img src="img/amazon.png" alt="Amazon Logo"></a>
+          </div>
+          <div class="col-3 social-icons">
+            <a target="_parent" href="http://flipkart.com/"><img src="img/flipkart.png" alt="Flipkart Logo"></a>
+          </div>
+          <div class="col-3 social-icons">
+            <a target="_parent" href="http://snapdeal.com"><img src="img/snapdeal.png" alt="SnapDeal Logo"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <i class="more-less glyphicon glyphicon-plus"></i>
+                                  Top Websites
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <ul class="list-group">
+                      <li class="list-group-item"><a target="_parent" href="http://wikipedia.com/">Wikipedia</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://yahoo.com/">Yahoo</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://mail.google.com/">Gmail</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://bing.com/">Bing</a></li>
+                    </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  <i class="more-less glyphicon glyphicon-plus"></i>
+                                  Top Shopping Websites
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                              <ul class="list-group">
+                      <li class="list-group-item"><a target="_parent" href="http://amazon.com/">Amazon</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://flipkart.com/">Flipkart</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://myntra.com/">Myntra</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://ebay.com/">Ebay</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://snapdeal.com/">Snapdeal</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://jabong.com/">Jabong</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://tradus.com/">Tradus</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://yepme.com/">Yepme</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://Ajiyo.com/">Ajiyo</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://alibaba.com/">Alibaba</a></li>
+                    </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingSix">
+                          <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  <i class="more-less glyphicon glyphicon-plus"></i>
+                                  Top Online Walletes
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                          <div class="panel-body">
+                              <ul class="list-group">
+                      <li class="list-group-item"><a target="_parent" href="http://paytm.com/">PAyTM</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://www.airtel.in/bank/">Airtel Money</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://www.citruspay.com/">Citrus Pay</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://freecharge.in/">FreeCharge</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://www.mobikwik.com/">Mobikwik</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://www.payumoney.com/">PayU Money</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://www.olamoney.com/">Ola Money</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://www.oxigenwallet.com/">Oxigen Wallet</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://www.jio.com/en-in/apps/jio-money">Jio Money</a></li>
+                    </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  <i class="more-less glyphicon glyphicon-plus"></i>
+                                  Top Entertainment Websites
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                              <ul class="list-group">
+                      <li class="list-group-item"><a target="_parent" href="http://netflix.com/">Netflix</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://hotstar.com/">Hotstar</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://imdb.com/">IMDB</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://fmovies.se/">Fmovies</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://www.santabanta.com/">Santabanta</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://www.scoopwhoop.com/">Scoopwhoop</a></li>
+                    </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFour">
+                          <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  <i class="more-less glyphicon glyphicon-plus"></i>
+                                  Top Blogs
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                          <div class="panel-body">
+                              <ul class="list-group">
+                      <li class="list-group-item"><a target="_parent" href="https://techcrunch.com/">Tech Crunch</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://mashable.com/">Mashable</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://gizmodo.com/">Gizmodo</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://www.engadget.com/">Engadget</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://lifehacker.com/">Life Hacker</a></li>
+                    </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFive">
+                          <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  <i class="more-less glyphicon glyphicon-plus"></i>
+                                  Top Reading Websites and Forums
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                          <div class="panel-body">
+                              <ul class="list-group">
+                      <li class="list-group-item"><a target="_parent" href="http://medium.com/">Medium</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://quora.com/">Quora</a></li>
+                      <li class="list-group-item"><a target="_parent" href="http://stackoverflow.com/">Stackoverflow</a></li>
+                      <li class="list-group-item"><a target="_parent" href="https://forum.xda-developers.com/">XDA Forums</a></li>
+                    </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <advancedcomponent>
+            <img src="img/loading.gif" alt="Loading Please Wait!!!">
+        </advancedcomponent>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</html>
