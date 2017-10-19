@@ -13,9 +13,9 @@ header-img: "img/hello-world-banner.jpg"
 
 <p>In fact machines can now do some tasks better than humans the best example can be <a href="https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)" target="_blank">Deep Blue (chess computer)</a> developed by IBM known for being the first computer chess-playing system to win both a chess game and a chess match against a reigning world champion under regular time controls.</p>
 
-<p>So being a Programmer, I was also thrilled with Machine Learning but I suck at maths and most of the tutorials, online training articles and videos are focused on Maths which were not easy to understand for me, I contacted many Machine Learning experts also over the email and most of them replied with some blogs and suggested some books which were filled with wierd mathematical expressions.</p>
+<p>So being a Programmer, I was also thrilled with Machine Learning but I suck at maths and most of the tutorials, online training articles and videos are focused on Maths which were not easy for me to understand, I contacted many Machine Learning experts over the email and most of them replied with some blogs and suggested some books which were filled with wierd mathematical expressions.</p>
 
-<p>After searching all over the internet I landed on <a href="http://machinelearningmastery.com/" target="_blank">machinelearningmastery.com</a> by <a href="https://au.linkedin.com/in/jasonbrownlee" target="_blank">Dr. Jason Brownlee</a> and I was back on track with Machine Learning though, I am not a Mathematician.</p>
+<p>After searching all over the internet I landed on <a href="http://machinelearningmastery.com/" target="_blank">machinelearningmastery.com</a> by <a href="https://au.linkedin.com/in/jasonbrownlee" target="_blank">Dr. Jason Brownlee</a> and I was back on track with Machine Learning though, I am not a Mathematician. After digging dipper in the Web I landed on <a href="https://www.springboard.com/">springboard.com</a>. I would recommend this website to anyone who is interested in a career in Machine Learning and Data Science. The Website provides different courses on Data Science right from Beginners level. They also provide Career Track with a well-crafted curriculum for a successful career in Machine Learning and Data science and If you are enthusiastic about machine learning and want to get started as quick as possible then I would like to recommend <a href="https://www.springboard.com/learning-paths/machine-learning-python/">Free Machine Learning in Python</a> course by <a href="https://www.springboard.com/">Springboard</a>.</p>
 
 <p>So in this article I will be sharing how to get started with Machine Learning.</p>
 
@@ -31,3 +31,7 @@ header-img: "img/hello-world-banner.jpg"
 <p>Since now you are able to create predictions on models and are comfortable with Python Packages, you can now go for advanced machine learning libraries like <a href="https://www.tensorflow.org/" target="_blank">Tensorflow</a>, <a href="http://deeplearning.net/software/theano/" target="_blank">Theano</a> and dive deep into machine learning.</p>
 
 <p>Some useful links</p>
+<ul>
+	<li><a href="https://www.springboard.com/">springboard.com</a></li>
+	<li><a href="http://machinelearningmastery.com/">machinelearningmastery.com</a></li>
+</ul>
