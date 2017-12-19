@@ -1,0 +1,22 @@
+---
+layout:     post
+title:      "Singularity"
+subtitle:   The "Thing" everyone's worried about
+date:       "2017-12-18 19:50:00"
+author:     "Akshay Khale"
+header-img: "img/hello-world-banner.jpg"
+---
+<h1>Singularity</h1>
+<p>Those who are not familiar with the term Singularity, let me give you a gist of it. Singularity is a phase in which machines will be able to carry out all the task which a human can do without human intervention. Machines which are smarter, more creative and more cognitive than humans. I like to define it as <i>A phase where human brain is not a mystery anymore.</i></p>
+
+<p>You must have already started thinking about machines taking over or world or Terminator machines trying to kill human race. If you are then it's perfectly fine. Hollywood had created a bad reputation for machines and robots by their so called science fiction movies. And we can not deny the fact that there is possibility of a future like that.</p>
+
+<p>Futurist <a href="https://en.wikipedia.org/wiki/Ray_Kurzweil" target="_blank">Ray Kurzweil</a> has given the prediction that considering the research going in Artificial intelligence and machine learning, we are very close to Singularity. It's going to happen in next 30 years. But he is very positive about it. He is happy that Singularity going to happen. And he consider himself lucky to witness it. He says that, <i>Singularity is science and not science fiction.</i> Machines will be serving humanity. Machines will accelerate evolution. And human race will be benefited by them.</p>
+
+<p>Even machine learning expert <a href="http://www.andrewng.org/about/" target="_blank">Andrew NG</a> says that, <i>AI is the next electricity.</i> Electricity is a lethal technology, we can use it to electrocute an elephant but being such a lethal technology it's still being used everywhere. It's a crucial part of our daily life. And that's the future of AI. It will be a crucial part of our life. It will be serving the humanity.</p>
+
+<p>Now you might be thinking, <i>"Those all were nice things about AI but what about Elon Musk, who is warning everyone about AI?"</i>. What I would say is, People are unable understand what Elon is trying to convey. In fact he is investing in AI firms. He is working on self driving vehicles. The best example is The Neuralink project by Elon Musk, which will allow us to control Human Brain and thoughts. Elon is not against AI or research in the field of AI. He is concerned about the regularization of AI. He is not worried about killed robots. He is worried about a self learning super intelligent AI program. He is <a href="https://twitter.com/elonmusk/status/934889932807593984?lang=en" target="_blank">says</a>, <i>"We should regulate AI/robotics like we do food, medicines, aircraft and cars.".</i> He is not against AI or Singularity, he is against unregulated AI research. An AI program like Microsoft's disastrous Tay bot. Project Tay was started as an innocent AI chatbot but after learning conversations over the web, within hours Tay started to sending racist comments and Microsoft has to close the project. We should be worried about such projects. AI isn't a nightmare but an unregulated AI is. We should be worried about that. In fact there's already research going on the regulation of AI research through blockchain.</p>
+
+<p>I am a pro-AI Person. I believe that</p>
+
+<p><i>"With a proper regulation and research, the Artificial Intelligence will be most useful and invincible technology serving humans and accelerating human evolution."</i>.</p>
