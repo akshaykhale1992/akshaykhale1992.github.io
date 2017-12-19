@@ -20,3 +20,6 @@ header-img: "img/hello-world-banner.jpg"
 <p>I am a pro-AI Person. I believe that</p>
 
 <p><i>"With a proper regulation and research, the Artificial Intelligence will be most useful and invincible technology serving humans and accelerating human evolution."</i>.</p>
+
+<p><i>Thank you for reading.</i></p>
+<p><i>Live long and prosper.</i></p>
