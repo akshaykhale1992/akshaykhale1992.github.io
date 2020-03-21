@@ -25,12 +25,12 @@ I am using a simple c-program for calculating the factorial of a number.
 <pre>
 
 int factorial(int number) {
-  if (number == 1 ) { return 1; }
-  else { return number * factorial(number -1 ); }
+if (number == 1 ) { return 1; }
+else { return number * factorial(number -1 ); }
 }
 
 int main() {
-  return 10;
+return 10;
 }
 
 </pre>
@@ -81,4 +81,4 @@ That’s all…
 
 Thank you for reading.
 
-Originally published on <a href="[https://medium.com/@TheAkshayKhale/hello-world-with-web-assembly-33080c2880c7](https://medium.com/@TheAkshayKhale/hello-world-with-web-assembly-33080c2880c7 "https://medium.com/@TheAkshayKhale/hello-world-with-web-assembly-33080c2880c7")" target="_blank">Medium</a>
+Originally published on Medium: [https://medium.com/@TheAkshayKhale/hello-world-with-web-assembly-33080c2880c7](https://medium.com/@TheAkshayKhale/hello-world-with-web-assembly-33080c2880c7 "https://medium.com/@TheAkshayKhale/hello-world-with-web-assembly-33080c2880c7")
