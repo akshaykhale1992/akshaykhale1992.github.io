@@ -77,8 +77,8 @@ You just need to load the .wasm file and you can start executing functions from 
     
     </html>
 
-</pre>
-
 That’s all…
 
 Thank you for reading.
+
+Originally published on <a href="[https://medium.com/@TheAkshayKhale/hello-world-with-web-assembly-33080c2880c7](https://medium.com/@TheAkshayKhale/hello-world-with-web-assembly-33080c2880c7 "https://medium.com/@TheAkshayKhale/hello-world-with-web-assembly-33080c2880c7")" target="_blank">Medium</a>
