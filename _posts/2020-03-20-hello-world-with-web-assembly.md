@@ -20,9 +20,20 @@ Let’s get started:
 
 To generate the WASM bytecode, I am using the following tool: [https://wasdk.github.io/WasmFiddle/](https://wasdk.github.io/WasmFiddle/ "https://wasdk.github.io/WasmFiddle/") which builds .wasm modules for you from a C-Program.
 
-I am using the following simple c-program for calculating the factorial of a number.
+I am using a simple c-program for calculating the factorial of a number.
 
-\[A simple C-Program for calculating Factorial of a number.\]([https://gist.githubusercontent.com/akshaykhale1992/ee6add9de2c6cf29016288d8da8b0838/raw/7dd350351c422bf2cdd3de9247d561f42c822867/factorial.c](https://gist.githubusercontent.com/akshaykhale1992/ee6add9de2c6cf29016288d8da8b0838/raw/7dd350351c422bf2cdd3de9247d561f42c822867/factorial.c "https://gist.githubusercontent.com/akshaykhale1992/ee6add9de2c6cf29016288d8da8b0838/raw/7dd350351c422bf2cdd3de9247d561f42c822867/factorial.c"))
+<pre>
+
+int factorial(int number) {
+  if (number == 1 ) { return 1; }
+  else { return number * factorial(number -1 ); }
+}
+
+int main() {
+  return 10;
+}
+
+</pre>
 
 Simply paste your C language code in the top-left section, click on `build`, which will compile and build the WASM file or return an error if code has any syntax errors.
 
@@ -34,7 +45,39 @@ Most modern web-browsers execute web-assembly out of the box.
 
 You just need to load the .wasm file and you can start executing functions from the .wasm file directly using Javascript.
 
-\[Using the WASM file in your Javascript.\] ([https://gist.githubusercontent.com/akshaykhale1992/55c441443a7ba140e712b4d6efbd1aa9/raw/e5a24d1c59c059f7210f48b52039d2f86e917267/index.html](https://gist.githubusercontent.com/akshaykhale1992/55c441443a7ba140e712b4d6efbd1aa9/raw/e5a24d1c59c059f7210f48b52039d2f86e917267/index.html "https://gist.githubusercontent.com/akshaykhale1992/55c441443a7ba140e712b4d6efbd1aa9/raw/e5a24d1c59c059f7210f48b52039d2f86e917267/index.html"))
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <input id="number" value="5" />
+        <h3>Factorial of <span id="number_span"></span> is: <span id="factorial"></span></h3>
+        <input type="button" onclick="test()" value="Calculate">
+        <script>
+            function handleIo(number, factorial) {
+                document.getElementById('number_span').innerHTML = number;
+                document.getElementById('factorial').innerHTML = factorial;
+            }
+            async function test() {
+                const response = await fetch("program.wasm");
+                const buffer = await response.arrayBuffer();
+                const obj = await WebAssembly.instantiate(buffer);
+                let number = document.getElementById('number').value;
+                let factorial = obj.instance.exports.factorial(number);
+                handleIo(number, factorial);
+            }
+            test();
+        </script>
+    </body>
+    
+    </html>
+
+</pre>
 
 That’s all…
 
