@@ -62,8 +62,12 @@ You got a great product but do not know how to sell it, then you can either star
 
 You don’t need to be a web developer to build an E-commerce store. Webstore management applications like Shopify make it very easy and fast to build your E-commerce store and start selling. It’s just a few clicks to set up the store and after setting up, you can simply add photos of your products and start selling. The basic [Shopify website plan](https://www.shopify.in/pricing) starts with as low as $29 per month (with additional Transaction fees).
 
+<br/>
+
 ***
 
-**Conclusion**:
+<br/>
+
+**Conclusion**:<br/>
 
 Various free and paid content distribution platforms are available for content creators which helps them to distribute their content to the right audience.
