@@ -20,5 +20,3 @@ fields:
 - type: file
   name: header-img
   label: header-img
-pages:
-- _posts/test-for-forestry.md
