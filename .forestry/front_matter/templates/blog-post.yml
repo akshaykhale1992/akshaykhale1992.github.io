@@ -20,3 +20,5 @@ fields:
 - type: file
   name: header-img
   label: header-img
+pages:
+- _posts/now-is-the-best-time-for-content-creators.md
