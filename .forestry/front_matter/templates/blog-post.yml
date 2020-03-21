@@ -21,4 +21,5 @@ fields:
   name: header-img
   label: header-img
 pages:
+- _posts/hello-world-with-web-assembly.md
 - _posts/now-is-the-best-time-for-content-creators.md
