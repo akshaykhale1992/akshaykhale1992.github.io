@@ -21,4 +21,5 @@ fields:
   name: header-img
   label: header-img
 pages:
+- _posts/composer-package-development-tips-and-tricks.md
 - _posts/using-composer-the-right-way.md
