@@ -22,4 +22,5 @@ fields:
   label: header-img
 pages:
 - _posts/composer-package-development-tips-and-tricks.md
+- _posts/tips-for-a-productive-wfh.md
 - _posts/using-composer-the-right-way.md
