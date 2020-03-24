@@ -8,10 +8,6 @@ author: Akshay Khale
 header-img: "/uploads/composer-1.png"
 
 ---
-If you are not a PHP Developer and do not care what composer is then you can skip this article and read some other interesting article on Medium.
-
-***
-
 If you are a PHP developer and do active PHP Development then there are a lot of chances that you would want to develop a Package and use it in your application.
 
 This is a very short article (rather a tip) which will help you with package development.
