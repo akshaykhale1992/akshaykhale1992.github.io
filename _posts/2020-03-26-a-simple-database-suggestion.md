@@ -19,7 +19,21 @@ If you want to save notification status for an order then you might have been us
 
 The approach above is completely fair and it works but there is a problem in the above approach. It does not have a record of exactly when the user was `deactivated` or exactly when the `email_status` was sent to the customer.
 
-For that, most of the developers follow a simple approach, instead of using a boolean field `is_active` they use `activated_on` (or `deactivated_on`_depends on your business requirement) Date feld with default value as NULL. They use fol_lowing queries to find users:
+For that, most of the developers follow a simple approach, instead of using a boolean field `is_active` they use `activated_on` (or `deactivated`_`on`_depends on your business requirement) Date f_eld with default value as NULL. They use fol_lowing queries to find users:
+
+    /* Query to find all the Active Users
+     * (if you are using `deactivated_on` date field with default NULL 
+     */
+    SELECT *
+    FROM `users`
+    WHERE `deactivated_on` IS NULL
+    
+    /* Query to find all the In-Active Users 
+     * with the date when they were deactivated 
+     */
+    SELECT *
+    FROM `users`
+    WHERE `deactivated_on` IS NOT NULL
 
 I am not saying this is the best approach but it surely helps you to make more sense out of the data in the Database and it completely depends on your business requirements.
 
