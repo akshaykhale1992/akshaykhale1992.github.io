@@ -21,6 +21,20 @@ The approach above is completely fair and it works but there is a problem in the
 
 For that, most of the developers follow a simple approach, instead of using a boolean field `is_active` they use `activated_on` (or `deactivated_on`_depends on your business requirement) Date with default value as NULL. They use fol_lowing queries to find users:
 
+    /* Query to find all the Active Users
+     * (if you are using `deactivated_on` date field with default NULL 
+     */
+    SELECT *
+    FROM `users`
+    WHERE `deactivated_on` IS NULL
+    
+    /* Query to find all the In-Active Users 
+     * with the date when they were deactivated 
+     */
+    SELECT *
+    FROM `users`
+    WHERE `deactivated_on` IS NOT NULL
+
 I am not saying this is the best approach but it surely helps you to make more sense out of the data in the Database and it completely depends on your business requirements.
 
 That’s all folks!!!
