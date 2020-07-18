@@ -1,4 +1,3 @@
-<!-- Testimonials -->
 <section class="testimonials text-center bg-light">
     <div class="container">
         <h2 class="mb-5">What people are saying...</h2>

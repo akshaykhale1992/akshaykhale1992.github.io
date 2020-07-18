@@ -1,4 +1,3 @@
-  <!-- Masthead -->
   <header class="masthead text-white text-center">
       <div class="container">
           <div class="row">

@@ -1,4 +1,3 @@
-  <!-- Call to Action -->
   <section class="call-to-action text-white text-center">
       <div class="overlay"></div>
       <div class="container">

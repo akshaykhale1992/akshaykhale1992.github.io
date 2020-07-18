@@ -1,4 +1,3 @@
-<!-- Footer -->
 <footer class="footer bg-dark footer-dark">
     <div class="container">
         <div class="row">
